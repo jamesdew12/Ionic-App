@@ -9,12 +9,18 @@ import { NavController, NavParams } from "@ionic/angular";
   styleUrls: ["home.page.scss"]
 })
 export class HomePage {
+  tasks:any[]=[]
   masters: Observable<any>;
 
-  constructor(public navCtrl: NavController, public httpClient: HttpClient) {
-    this.masters = this.httpClient.get("https://swapi.co/api/");
-    this.masters.subscribe(data => {
-      console.log("my data: ", data);
+
+  constructor(private http: HttpClient) {
+    this.http.get("https://swapi.co/api/people").subscribe((response) => {
+
+      // console.log(response['results']);
+      this.masters = response['results'];
+
+
     });
+    console.log(this.masters);
   }
 }
