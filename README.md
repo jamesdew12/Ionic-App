@@ -45,4 +45,4 @@ Or we could use something like:
 </ul>
 ```
 
-But working with Angular and Ionic web components for the first time, progresses were slow. May be we could have made faster progress if we would have started by stepping out of this project for the first hour and get a better understanding of the flow of data. 
+We did not succeed to implement it. Working with Angular and Ionic web components for the first time, progresses were slow. May be we could have made faster progress if we would have started by stepping out of this project for the first hour and get a better understanding of the flow of data. 
